@@ -1,3 +1,4 @@
+Forked from https://github.com/lukechilds/zsh-better-npm-completion
 # zsh-better-npm-completion
 
 > Better completion for `npm`
