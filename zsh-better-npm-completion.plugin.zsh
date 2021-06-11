@@ -11,7 +11,8 @@ _zbnc_no_of_npm_args() {
 }
 
 _zbnc_list_cached_modules() {
-  ls ~/.npm 2>/dev/null
+  ls -C1 ~/.npm 2>/dev/null
+  [[ -f package.json ]] && jq -r '.dependencies|keys[]' package.json
 }
 
 _zbnc_recursively_look_for() {
